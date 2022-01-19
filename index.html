@@ -21,8 +21,7 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-
-      <!-- section header -->
+    <!-- section header -->
     <header class="page-header">
       <div class="container">
         <div class="container-head">
@@ -71,7 +70,7 @@
         </div>
       </div>
     </header>
-      <!--section hero-->
+    <!--section hero-->
     <main>
       <section class="hero">
         <div class="container-hero">
@@ -79,7 +78,9 @@
             Эффективные решения <br />
             для вашего бизнеса
           </h1>
-          <button type="button" class="hero-button" data-modal-open>Заказать услугу</button>
+          <button type="button" class="hero-button" data-modal-open>
+            Заказать услугу
+          </button>
         </div>
       </section>
       <!--section services-->
@@ -686,15 +687,24 @@
       </div>
     </footer>
     <!-- section modal-window -->
-<div class="backdrop is-hidden" data-modal>
-  <div class="modal">
-    <button class="btn-modal" data-modal-close>
-      <svg class="icon-close" width="11" height="11" aria-label="Закрыть">
-        <use href="./images/icons.svg#close"></use>
-      </svg>
-    </button>
-  </div>
-</div>    
-<script src="./js/modal.js"></script>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="btn-modal" data-modal-close>
+          <svg class="icon-close" width="11" height="11" aria-label="Закрыть">
+            <use href="./images/icons.svg#close"></use>
+          </svg>
+        </button>
+        <form action="">
+          <h3>Оставьте свои данные, мы вам презвоним</h3>
+          <label>
+            <input type="text" name="username" id="" placeholder="" />Имя</label
+          >
+          <label><input type="tel" name="pnone_number" id="" />Телефон</label>
+          <label><input type="email" name="email" id="" />Почта</label>
+          <label><input type="text-area" name="" id="" />Комментарий</label>
+        </form>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>

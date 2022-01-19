@@ -644,3 +644,17 @@ main .doing {
   display: inline-block;
   fill: currentColor;
 }
+/* -----------------------Styles to form modal window----------------------- */
+
+input {
+  padding: 8px;
+  font-family: inherit;
+  margin: 0 40px;
+}
+
+label {
+  display: flex;
+  flex-direction: column-reverse;
+  margin-bottom: 8px;
+  margin-left: 40px;
+}
