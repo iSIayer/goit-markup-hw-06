@@ -615,7 +615,7 @@
           </address>
         </div>
         <div class="container-social">
-          <h3 class="social-title">присоединяйтесь</h3>
+          <h3 class="footer-title">присоединяйтесь</h3>
           <ul class="list social-card">
             <li class="social-item">
               <a
@@ -684,6 +684,12 @@
             </li>
           </ul>
         </div>
+        <div class="container-subscribe">
+          <form>
+            <h3 class="footer-title">Подпишитесь на рассылку</h3>
+            <input class="subscribe-input" type="email" placeholder="Email" />
+          </form>
+        </div>
       </div>
     </footer>
     <!-- section modal-window -->
@@ -694,14 +700,40 @@
             <use href="./images/icons.svg#close"></use>
           </svg>
         </button>
-        <form action="">
-          <h3>Оставьте свои данные, мы вам презвоним</h3>
-          <label>
-            <input type="text" name="username" id="" placeholder="" />Имя</label
-          >
-          <label><input type="tel" name="pnone_number" id="" />Телефон</label>
-          <label><input type="email" name="email" id="" />Почта</label>
-          <label><input type="text-area" name="" id="" />Комментарий</label>
+        <form class="form">
+          <h2 class="form-title">Оставьте свои данные, мы вам перезвоним</h2>
+          <div class="form-input">
+            <label for="username">Имя</label>
+            <input type="text" name="username" id="username" />
+          </div>
+          <div class="form-input">
+            <label for="tel">Телефон</label>
+            <input type="tel" name="pnone_number" id="tel" />
+          </div>
+          <div class="form-input">
+            <label for="email">Почта</label>
+            <input type="email" name="email" id="email" />
+          </div>
+          <div class="form-input">
+            <label for="comment">Комментарий</label>
+            <textarea
+              class="textarea"
+              name=""
+              id="comment"
+              cols="30"
+              rows="10"
+              placeholder="Введите текст"
+            ></textarea>
+          </div>
+          <div class="form-checkbox">
+            <input type="checkbox" name="check" id="check" />
+            <label for="check"
+              >Соглашаюсь с рассылкой и принимаю
+              <a href="#"> Условия договора</a></label
+            >
+          </div>
+
+          <button type="submit" class="form-button">Отправить</button>
         </form>
       </div>
     </div>
