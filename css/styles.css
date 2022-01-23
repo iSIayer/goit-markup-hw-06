@@ -791,7 +791,7 @@ main .doing {
   border: 2px solid #212121;
   border-radius: 2px;
   fill: none;
-  transition: border-color var(--transition-cubic),
+  transition: border var(--transition-cubic),
     background-color var(--transition-cubic), fill var(--transition-cubic);
 }
 
