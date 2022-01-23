@@ -723,6 +723,8 @@
               type="text"
               name="username"
               id="username"
+              min="3"
+              max="25"
             />
           </div>
           <div class="form-field">
@@ -730,14 +732,28 @@
               <use href="images/icons.svg#icon-phone"></use>
             </svg>
             <label for="tel">Телефон</label>
-            <input class="form-input" type="tel" name="pnone_number" id="tel" />
+            <input
+              class="form-input"
+              type="tel"
+              name="pnone_number"
+              id="tel"
+              min="10"
+              max="15"
+            />
           </div>
           <div class="form-field">
             <svg class="form-icon" width="18" height="18">
               <use href="images/icons.svg#icon-email"></use>
             </svg>
             <label for="email">Почта</label>
-            <input class="form-input" type="email" name="email" id="email" />
+            <input
+              class="form-input"
+              type="email"
+              name="email"
+              id="email"
+              min="10"
+              max="35"
+            />
           </div>
           <div class="form-field">
             <label for="comment">Комментарий</label>
@@ -751,10 +767,18 @@
             ></textarea>
           </div>
           <div class="form-checkbox">
-            <input type="checkbox" name="check" id="check" />
+            <input
+              class="input-checkbox visually-hidden"
+              type="checkbox"
+              name="check"
+              id="check"
+            />
+            <svg class="form-icon-check" width="15" height="15">
+              <use href="images/icons.svg#icon-check"></use>
+            </svg>
             <label for="check"
               >Соглашаюсь с рассылкой и принимаю
-              <a class="link form-link" href="#" rel="noopener noreferrer">
+              <a class="form-link" href="#" rel="noopener noreferrer">
                 Условия договора</a
               >
             </label>

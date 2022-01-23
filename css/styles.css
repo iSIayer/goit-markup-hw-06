@@ -720,7 +720,6 @@ main .doing {
   padding: 0 42px;
   outline: none;
   transition: border-color var(--transition-cubic);
-  background-color: tomato;
   display: flex;
 }
 
@@ -728,20 +727,25 @@ main .doing {
   position: absolute;
   top: 50%;
   left: 12px;
-  display: block;
-  background-color: teal;
-  margin-right: 10ox;
+  display: inline-block;
+  transition: fill var(--transition-cubic);
 }
 
-.form-input:focus {
+.form-input:focus,
+.textarea:focus {
   border-color: var(--accent-color);
+  box-shadow: 0 0 10px rgba(98, 148, 206, 0.5);
+}
+
+.form-field:focus-within > .form-icon {
+  fill: var(--accent-color);
 }
 
 .form-field label {
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.01em;
-  padding-bottom: 4px;
+  margin-bottom: 4px;
 }
 
 .textarea {
@@ -753,10 +757,6 @@ main .doing {
   height: 120px;
   margin-bottom: 20px;
   transition: border-color var(--transition-cubic);
-}
-
-.textarea:focus {
-  border-color: var(--accent-color);
 }
 
 .textarea::placeholder {
@@ -782,4 +782,19 @@ main .doing {
   display: flex;
   margin-left: auto;
   margin-right: auto;
+}
+
+.form-icon-check {
+  margin-right: 7px;
+  border: 2px solid #212121;
+  border-radius: 2px;
+  fill: none;
+  transition: border-color var(--transition-cubic),
+    background-color var(--transition-cubic), fill var(--transition-cubic);
+}
+
+.input-checkbox:checked + .form-icon-check {
+  border: transparent;
+  background-color: var(--accent-color);
+  fill: var(--primary-color);
 }
